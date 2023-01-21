@@ -1,0 +1,16 @@
+@mixin space-between{
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin spacing{
+    padding: 0px;
+    margin: 0px;
+}
+
+@mixin flex-vertical{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
