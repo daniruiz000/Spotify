@@ -1,0 +1,116 @@
+div > span {
+  transition: 300ms;
+}
+div > span:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+div, section {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  background-image: linear-gradient(to bottom right, #72FFB6, #10D164);
+  font-family: "Roboto", sans-serif;
+  padding: 30px;
+}
+
+.header {
+  max-width: 300px;
+  padding: 50px;
+  margin: 0 auto;
+}
+.header__logo {
+  width: 100%;
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 400px;
+  margin: 0 auto;
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
+  background-color: white;
+}
+.card__album-cover {
+  width: 100%;
+  display: block;
+}
+.card__player {
+  background-color: white;
+  width: 100%;
+  text-align: center;
+  padding: 22px 16px;
+}
+.card__title {
+  font-size: 24px;
+  margin: 0;
+}
+.card__author {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.bar {
+  display: block;
+  padding: 10px 16px;
+}
+.bar__time {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.bar__button span {
+  font-size: 20px;
+}
+.bar__button--no-selected {
+  color: lightgray;
+}
+.bar__button--selected {
+  color: black;
+}
+.bar__progress {
+  background: #efefef;
+  height: 14px;
+  width: 100%;
+  margin-bottom: 5px;
+}
+.bar__status {
+  background: black;
+  height: 100%;
+  width: 0%;
+}
+.bar__order {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 16px 0;
+}
+.controls__button {
+  margin: 0 16px;
+}
+.controls__button span {
+  font-size: 30px;
+}
+
+@media all and (min-width: 768px) {
+  .card {
+    max-width: 700px;
+    align-items: center;
+  }
+  .card__album-cover {
+    width: 40%;
+  }
+  .card__player {
+    width: 60%;
+  }
+}/*# sourceMappingURL=styles.css.map */
